@@ -44,7 +44,7 @@ void mnozenie()
 
 void dzielenie()
 {
-	double a, b;
+	char a, b;
 	cout << endl << "Podaj 1 liczbe: ";
 	cin >> a;
 
