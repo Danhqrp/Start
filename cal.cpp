@@ -44,7 +44,7 @@ void multiplication()
 
 void division()
 {
-	char a, b;
+	long double a, b,c;
 	cout << endl << "Enter the first number: ";
 	cin >> a;
 
@@ -54,9 +54,11 @@ void division()
 
 		cout<<"You can't divide by 0!";
 	}else
+		
+		c=a/b;
 
+		cout<< a <<"/"<<b<< "="<< c <<endl;
 
-		cout << a <<"/"<<b<< "="<< a/b <<endl ;
 }
 
 void expon(){
@@ -83,7 +85,7 @@ int main() {
 	bool flaga=true;
 	while(flaga){
 		int choose;
-
+		
 
 		//MENU
 		cout <<"By this number 1-4 choose what I should to do:"<< endl;
