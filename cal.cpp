@@ -9,95 +9,119 @@
 #include <iostream>
 using namespace std;
 
-void dodawanie()
+void addition()
 {
 	int a, b;
-	cout << endl << "Podaj 1 liczbe: ";
+	cout << endl << "Enter the first number: ";
 	cin >> a;
 
-	cout << "Podaj 2 liczbe: ";
+	cout << "Enter the secound number: ";
 	cin >> b;
 	cout << a <<"+"<< b<< "="<< a+b <<endl ;
 }
 
-void odejmowanie()
+void subtraction()
 {
 	int a, b;
-	cout << endl << "Podaj 1 liczbe: ";
+	cout << endl << "Enter the first number: ";
 	cin >> a;
 
-	cout << "Podaj 2 liczbe: ";
+	cout << "Enter the secound number: ";
 	cin >> b;
 	cout << a <<"-"<< b<< "="<< a-b <<endl ;
 }
 
-void mnozenie()
+void multiplication()
 {
 	int a, b;
-	cout << endl << "Podaj 1 liczbe: ";
+	cout << endl << "Enter the first number: ";
 	cin >> a;
 
-	cout << "Podaj 2 liczbe: ";
+	cout << "Enter the secound number: ";
 	cin >> b;
 	cout << a <<"*"<< b<< "="<< a*b <<endl ;
 }
 
-void dzielenie()
+void division()
 {
 	char a, b;
-	cout << endl << "Podaj 1 liczbe: ";
+	cout << endl << "Enter the first number: ";
 	cin >> a;
 
-	cout << "Podaj 2 liczbe: ";
+	cout << "Enter the secound number: ";
 	cin >> b;
 	if(b==0){
 
-		cout<<"nie mozna dzielic przez 0!";
+		cout<<"You can't divide by 0!";
 	}else
 
 
 		cout << a <<"/"<<b<< "="<< a/b <<endl ;
 }
 
+void expon(){
+
+	int a, b, c=1;
+	cout << endl << "Enter the first number: ";
+	cin >> a;
+
+	cout << "Enter the secound number: ";
+	cin >> b;
+	
+	for(int i=0; i<b; i++){
+
+		c = c*a;
+
+	}
+	cout << a<<"^"<<b<< "="<< c <<endl ;
+
+
+}
+
 int main() {
 
 	bool flaga=true;
 	while(flaga){
-		int a, b, c, wybor, wynik;
+		int choose;
 
 
 		//MENU
-		cout <<"Za pomoca numerow 1-4 wybierz jakie chcesz zrobic dzialanie:"<< endl;
-		cout << "1. Dodawanie"  << endl;
-		cout << "2. Odejmowanie"<< endl;
-		cout << "3. Mnozenie"   << endl;
-		cout << "4. Dzielenie"  << endl;
+		cout <<"By this number 1-4 choose what I should to do:"<< endl;
+		cout << "1. Addition"  << endl;
+		cout << "2. Subtraction"<< endl;
+		cout << "3. Multiplication"   << endl;
+		cout << "4. Division"  << endl;
+		cout << "5. Exponentiation"  << endl;
 
-		//WYBOR
-		cout << "Wybierz liczbe: ";
-		cin >> wybor;
+
+		//choose
+		cout << "choose number: ";
+		cin >> choose;
 
 
 		//DZIALANIA
-		switch(wybor){
+		switch(choose){
 		case 1:
-			dodawanie();
+			addition();
 			break;
 
 		case 2:
-			odejmowanie();
+			subtraction();
 			break;
 
 		case 3:
-			mnozenie();
+			multiplication();
 			break;
 
 		case 4:
-			dzielenie();
+			division();
+			break;
+		case 5:
+			expon();
 			break;
 
 		default :
-			cout << "Nie ma takiej opcji" <<endl;
+			cout << "Sorry! Bad number." <<endl;
 			break;
 		}
 	}
