@@ -44,7 +44,7 @@ void multiplication()
 
 void division()
 {
-	long double a, b,c;
+	double a, b,c;
 	cout << endl << "Enter the first number: ";
 	cin >> a;
 
@@ -82,8 +82,8 @@ void expon(){
 
 int main() {
 
-	bool flaga=true;
-	while(flaga){
+	
+	while(true){
 		int choose;
 		
 
