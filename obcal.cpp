@@ -9,9 +9,15 @@
 #include <iostream>
 using namespace std;
 
+class add{
+public:
+
+	int a, b;
+
+
 void addition()
 {
-	int a, b;
+	
 	cout << endl << "Enter the first number: ";
 	cin >> a;
 
@@ -20,9 +26,16 @@ void addition()
 	cout << a <<"+"<< b<< "="<< a+b <<endl ;
 }
 
+};
+
+class sub{
+	public:
+	int a, b;	
+
+
 void subtraction()
 {
-	int a, b;
+	
 	cout << endl << "Enter the first number: ";
 	cin >> a;
 
@@ -30,10 +43,16 @@ void subtraction()
 	cin >> b;
 	cout << a <<"-"<< b<< "="<< a-b <<endl ;
 }
+};
+
+
+class mul{
+	public:
+	int a, b;
 
 void multiplication()
 {
-	int a, b;
+	
 	cout << endl << "Enter the first number: ";
 	cin >> a;
 
@@ -42,9 +61,14 @@ void multiplication()
 	cout << a <<"*"<< b<< "="<< a*b <<endl ;
 }
 
+};
+
+class sio{
+	public:
+	double a, b,c;
 void division()
 {
-	double a, b,c;
+	
 	cout << endl << "Enter the first number: ";
 	cin >> a;
 
@@ -61,9 +85,14 @@ void division()
 
 }
 
-void expon(){
+};
 
-	int a, b, c=1;
+class exp{
+	public:
+	
+void expon(){
+int a, b, c=1;
+
 	cout << endl << "Enter the first number: ";
 	cin >> a;
 
@@ -79,7 +108,7 @@ void expon(){
 
 
 }
-
+};
 int main() {
 
 	
@@ -104,22 +133,27 @@ int main() {
 		//DZIALANIA
 		switch(choose){
 		case 1:
-			addition();
+			add z1;
+			z1.addition();
 			break;
 
 		case 2:
-			subtraction();
+			sub a2;
+			a2.subtraction();
 			break;
 
 		case 3:
-			multiplication();
+			mul a3;
+			a3.multiplication();
 			break;
 
 		case 4:
-			division();
+			sio a4;
+			a4.division();
 			break;
 		case 5:
-			expon();
+			exp a5;
+			a5.expon();
 			break;
 
 		default :
