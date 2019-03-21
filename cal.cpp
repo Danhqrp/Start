@@ -52,7 +52,7 @@ void division()
 	cin >> b;
 	if(b==0){
 
-		cout<<"You can't divide by 0!";
+		cout<<"You can't divide by 0!!";
 	}else
 		
 		c=a/b;
