@@ -24,14 +24,8 @@ for(int i=0; i<slowo.size();i++){
 } 
 }
 
-void szyfr2(){
-
-			
-			
-			
-	
-			
-	
+void szyfr2()
+{	
 			for (int i = 0; i < slowo.size(); ++i)
 			{
 		output_text += (i%2) ? slowo[i] ^ 0x0F : slowo[i] ^ 0x0A;
